@@ -1,0 +1,7 @@
+[Flatpak Repo]
+Title=DLSS Updater
+Url=https://recol.github.io/dlss-updater-flatpak/
+Homepage=https://github.com/Recol/DLSS-Updater
+Comment=Update channel for the DLSS Updater Flatpak bundles published on GitHub Releases
+Description=DLSS, XeSS, DirectStorage, FSR, and Streamline DLL updater for games.
+Icon=https://raw.githubusercontent.com/Recol/DLSS-Updater/main/dlss_updater/icons/dlss_updater.png
