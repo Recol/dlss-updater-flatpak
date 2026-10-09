@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DLSS Updater — Flatpak repository</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem; max-width: 46rem;
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+  p.sub { margin-top: 0; opacity: .7; }
+  pre {
+    padding: .9rem 1rem; border-radius: 8px; overflow-x: auto;
+    background: rgba(127,127,127,.14);
+  }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+  a { color: #2d6e88; }
+  @media (prefers-color-scheme: dark) { a { color: #7ec8e3; } }
+  footer { margin-top: 2.5rem; font-size: .875rem; opacity: .65; }
+</style>
+</head>
+<body>
+<h1>DLSS Updater — Flatpak repository</h1>
+<p class="sub">The update channel for the DLSS Updater Flatpak bundles published on GitHub Releases.</p>
+
+<p>This is an OSTree repository, not a web page — point <code>flatpak</code> at it:</p>
+
+<pre><code>flatpak remote-add --user --if-not-exists \
+    dlss-updater https://recol.github.io/dlss-updater-flatpak/dlss-updater.flatpakrepo
+flatpak install --user dlss-updater io.github.recol.dlss-updater</code></pre>
+
+<p>Installing a recent <code>.flatpak</code> bundle from the releases page configures this
+remote for you, after which updates arrive through <code>flatpak update</code> or your
+desktop software centre.</p>
+
+<footer>
+  <a href="https://github.com/Recol/DLSS-Updater">DLSS Updater</a> ·
+  <a href="https://github.com/Recol/dlss-updater-flatpak">this repository</a>
+</footer>
+</body>
+</html>
